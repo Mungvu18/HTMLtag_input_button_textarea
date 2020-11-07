@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h6>Bài đọc sử dụng thẻ input button textarea</h6>
+</head>
+<body>
+<!--  Thẻ input được sử dụng để tạo ra giúp người dùng nhập thông tin vào.-->
+<!--  Có nhiều loại thẻ input khác nhau, trong đó phổ biến là: text,password,checkbox,radio,reset,submit,hidden-->
+<!-- + input text dùng để nhập dữ liệu ngắn trên 1 dòng-->
+<form action="/inpu_button_textArea.html" method="get">
+    Account: <input type="text" name>
+</form>
+<!--+ thuộc tính password trong input dùng để nhập mật khâu-->
+<form action="inpu_button_textArea.html" method="get">
+    Password: <input type="password" name="password">
+</form>
+<!--+ thuộc tính checkbox của thẻ input dùng để lựa trọn nhiều hạng mục danh sách-->
+<form action="inpu_button_textArea.html" method="get">
+    Sở thích: <br>
+    <label><input type="checkbox" name="hobby" value="travel"> Du lịch </label> <br>
+    <label><input type="checkbox" name="hobby" value="sport"> Thể thao </label> <br>
+    <label><input type="checkbox" name="hobby" value="cooking"> Nấu ăn </label> <br>
+</form>
+<!--+ thuộc tính radio dùng để lựa chọn một hạng mục tù một danh sách-->
+<form action="inpu_button_textArea.html">
+    <label><input type="radio" name="hobby" value="travel"> Du lịch </label> <br>
+    <label><input type="radio" name="hobby" value="sport"> Thể thao </label> <br>
+    <label><input type="raido" name="hobby" value="cooking"> Nấu ăn </label> <br>
+</form>
+<!--+ thuộc tính reset dùng để xóa các giá trị trong một form, đưa về các trường giá trị mặc định của chúng-->
+<form action="/inpu_button_textArea.html">
+    account: <input type="text" name ="account" value="admin"> <br>
+    Sơ thích: <br>
+    <label><input type="radio" name="hobby" value="travel"> Du lịch </label>
+    <label><input type="radio" name="hobby" value="sport"> Thể thao </label>
+    <label><input type="radio" name="hobbt" value="cooking"> Nấu ăn </label>
+    <input type="reset" name="reset">
+</form>
+<!--+ input submit thuộc tính dùng để hiện một nút, có chức năng đẩy đủ dữ liệu từ form lên server khi bấm vào-->
+<form action="/inpu_button_textArea.html" method="post">
+    Sở thích: <br>
+    <label><input type="radio" name="hobby" value="travel"> Du lịch</label>
+    <label><input type="radio" name="hobby" value="sport"> Thể thao </label>
+    <label><input type="raido" name="hobby" value="cooking"> Nấu ăn </label>
+    <input type="submit" value="push data">
+</form>
+<!--+ input hidden thuộc tính dùng để chứa giá trị của form nhưng không hiển thị trê giao diện người dùng.-->
+<!--Dữ liệu này cũng được đẩy lên sever như bình thường-->
+<form action="/inpu_button_textArea.html" method="post">
+    <input type="hidden" name="secret" value="anhinh">
+    Account: <input type="hidden" name="account" value="admin">
+    Sở thích: <br>
+    <label><input type="radio" name="hobby" value="travel" checked>Du lịch</label>
+    <label><input type="radio" name="hobby" value="sport">Thể thao</label>
+    <label><input type="radio" name="hobby" value="cooking"> Nấu ăn </label>
+    <input type="submit" value="push data">
+</form>
+<!--+ thẻ Button được sử dụng để hiển thị một nút-->
+<!--+ Bên trong thẻ button thì chúng ta có thể đưa các nội dung khác vào,-->
+<!--chẳng hạn như là một chuỗi hình ảnh.  Đây cũng chính là sự khác biệt so với việc sử dụng thẻ input bottun-->
+<form action="/">
+    <button style="button">
+        <img src="https://img-cache.coccoc.com/image2?i=1&l=32/510330135" alt="doesn't see img">
+    </button>
+</form>
+<!--+ thẻ textarea sử dụng để hiển thị trường nhập chuỗi dài(nhiều dòng)-->
+<form action="/inpu_button_textArea.html">
+    <texteara clos="50" row="4"> this is a very very long text text text text text</texteara>
+</form>
+
+</body>
+</html>
